@@ -1,0 +1,50 @@
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Random Password Generator - HTML | CSS | JS</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2 class="title">Generate Password</h2>
+      <div class="result" id="result">
+        CLICK ON GENERATE PASSWORD
+      </div>
+
+      <div class="length-slider" data-length="0">Length:</div>
+      <div class="range-slider" data-min="4" data-max="32">
+        <input type="range" min="4" max="32" value="16" id="slider" />
+      </div>
+
+      <div class="settings-title">Settings</div>
+
+      <div class="settings">
+        <div class="setting">
+          <input type="checkbox" id="uppercase" checked />
+          <label for="uppercase">Include Uppercase</label>
+        </div>
+        <div class="setting">
+          <input type="checkbox" id="lowercase" checked />
+          <label for="lowercase">Include Lowercase</label>
+        </div>
+        <div class="setting">
+          <input type="checkbox" id="numbers" checked />
+          <label for="numbers">Include Numbers</label>
+        </div>
+        <div class="setting">
+          <input type="checkbox" id="symbols" checked />
+          <label for="symbols">Include symbols</label>
+        </div>
+      </div>
+
+      <button id="generate" class="btn-generate">Generate Password</button>
+    </div>
+  </body>
+  <script src="app.js"></script>
+</html>
